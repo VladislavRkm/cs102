@@ -1,9 +1,9 @@
 import datetime as dt
 import unittest
 
-import responses
+import responses  # type: ignore
 
-from research.age import age_predict
+from research.age import age_predict  # type: ignore
 
 
 class AgeTestCase(unittest.TestCase):
@@ -18,19 +18,19 @@ class AgeTestCase(unittest.TestCase):
                 "id": 1,
                 "first_name": "",
                 "last_name": "",
-                "bdate": f"01.1.{self.year-25}",
+                "bdate": f"01.1.{self.year - 25}",
             },
             {
                 "id": 2,
                 "first_name": "",
                 "last_name": "",
-                "bdate": f"01.1.{self.year-20}",
+                "bdate": f"01.1.{self.year - 20}",
             },
             {
                 "id": 3,
                 "first_name": "",
                 "last_name": "",
-                "bdate": f"01.1.{self.year-15}",
+                "bdate": f"01.1.{self.year - 15}",
             },
             {"id": 4, "first_name": "", "last_name": "", "bdate": "9.8"},
             {"id": 5, "first_name": "", "last_name": ""},
