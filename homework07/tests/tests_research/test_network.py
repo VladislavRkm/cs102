@@ -1,7 +1,7 @@
 import re
 import unittest
 
-import responses  # type: ignore
+import responses  
 from research.network import ego_network  # type: ignore
 
 
