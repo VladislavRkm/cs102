@@ -1,7 +1,6 @@
 import sqlite3
 
 from bottle import redirect, request, route, run, template  # type: ignore
-
 from db import News, session
 from scraputils import get_news
 

@@ -1,9 +1,10 @@
-import requests
+# import requests
 from bs4 import BeautifulSoup  # type: ignore
+from db import News  # type: ignore
 from sqlalchemy import create_engine  # type: ignore
 from sqlalchemy.orm import sessionmaker  # type: ignore
 
-from db import News
+
 
 engine = create_engine("sqlite:///news.db")
 Session = sessionmaker(bind=engine)
