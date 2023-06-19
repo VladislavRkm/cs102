@@ -4,8 +4,6 @@ from db import News  # type: ignore
 from sqlalchemy import create_engine  # type: ignore
 from sqlalchemy.orm import sessionmaker  # type: ignore
 
-
-
 engine = create_engine("sqlite:///news.db")
 Session = sessionmaker(bind=engine)
 
